@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 export default function HeroSection() {
     return (
         <section id="home" className="relative min-h-screen flex items-center bg-neutral-50">
-            <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8 py-16">
+            <div className="container mx-auto px-6 sm:px-8 md:px-10 lg:px-12 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-8 py-16">
                 {/* LEFT */}
                 <motion.div
                     className="md:w-1/2 text-center md:text-left"
