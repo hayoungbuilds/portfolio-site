@@ -1,7 +1,7 @@
-'use client';
-
 import ProjectCard from '@/components/ProjectCard';
 import { Project } from '@/types/project';
+import SectionWrapper from '../common/SectionWrapper';
+import SectionTitle from '../common/SectionTitle';
 
 const projects: Project[] = [
     {
@@ -69,17 +69,14 @@ const projects: Project[] = [
 
 export default function ProjectsSection() {
     return (
-        <section id="projects" className="bg-neutral-50 py-20">
-            <div className="container mx-auto px-6 sm:px-8 md:px-10 lg:px-12 max-w-7xl">
-                <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
-                    <span className="text-indigo-600">Project</span> Work
-                </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10">
-                    {projects.map((project, idx) => (
-                        <ProjectCard key={idx} project={project} />
-                    ))}
-                </div>
+        <SectionWrapper id={'projects'} className="bg-neutral-50">
+            <SectionTitle highlight="PROJECT" title="WORK" />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10">
+                {projects.map((project, idx) => (
+                    <ProjectCard key={idx} project={project} />
+                ))}
             </div>
-        </section>
+        </SectionWrapper>
     );
 }
