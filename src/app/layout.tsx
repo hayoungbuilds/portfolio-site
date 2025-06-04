@@ -5,6 +5,7 @@ import { cn } from '../lib/utils';
 import ResumeButton from '@/components/common/ResumeButton';
 import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
+import Preloader from '@/components/common/Preloader';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={cn('min-h-screen bg-white text-gray-900', inter.className)}>
+                <Preloader />
                 <Header />
                 {children}
                 <Footer />
