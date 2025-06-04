@@ -1,5 +1,9 @@
 # hayoung's Portfolio ✨
 
+
+![image](https://github.com/user-attachments/assets/3c56b5ae-9280-48f5-a57b-2ec51a819bde)
+
+
 Welcome to my portfolio website repository!  
 This site introduces who I am as a developer, my projects, and what I value when building for the web.
 
