@@ -5,5 +5,7 @@ export type Project = {
     stack: string[];
     image?: string;
     link?: string;
+    role?: string;
+    outputs?: string[];
     private?: boolean;
 };

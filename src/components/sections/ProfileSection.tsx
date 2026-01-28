@@ -71,10 +71,27 @@ export default function ProfileSection() {
                                 <CheckCircle className="w-4 h-4 text-indigo-600" /> 주요 성과
                             </h4>
                             <ul className="list-disc list-outside pl-5 text-sm text-gray-700 space-y-1">
-                                <li>Electron 기반 Vision 앱 UI 개발 및 상태 관리 로직 구현</li>
-                                <li>박람회용 IEN DEMO 앱 프론트엔드 개발</li>
-                                <li>VAD 검사 화면에서 영상 재생과 차트 컴포넌트 동기화 기능 개발</li>
-                                <li>공통 컴포넌트 구조 설계 및 다국어 지원</li>
+                                <li>
+                                    <strong>총 5개 프로젝트</strong> 프론트엔드 개발 담당(개발·운영, 유지보수·이슈 대응
+                                    포함)
+                                </li>
+                                <li>
+                                    화면 구현뿐 아니라 <strong>상태 관리 로직 설계</strong>,{' '}
+                                    <strong>API 연동 및 예외 케이스 처리</strong>까지 구현
+                                </li>
+                                <li>
+                                    <strong>영상 재생–차트 동기화</strong>,{' '}
+                                    <strong>Recharts 기반 시각화 및 영상 컨트롤 연동</strong> 등 분석 화면 기능 개발
+                                </li>
+                                <li>
+                                    <strong>공통 컴포넌트 개발·개선</strong>을 통해 재사용 UI 기반 확장
+                                </li>
+                                <li>
+                                    제품 <strong>사용자 매뉴얼 작성·정리</strong>(사용 가이드 제공)
+                                </li>
+                                <li>
+                                    박람회용 <strong>IEN DEMO 앱</strong> 프론트엔드 개발(현장 데모용 기능 구현)
+                                </li>
                             </ul>
                         </div>
                     </div>

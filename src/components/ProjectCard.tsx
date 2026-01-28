@@ -17,9 +17,28 @@ export default function ProjectCard({ project }: { project: Project }) {
                     className="w-full h-full object-cover"
                 />
             </div>
+
             <h3 className="text-lg sm:text-xl font-semibold text-gray-900">{project.title}</h3>
             <p className="text-xs sm:text-sm text-gray-500 mb-1">{project.period}</p>
+
             <p className="text-sm sm:text-base text-gray-700 mb-3">{project.description}</p>
+
+            {/* Role / Output: 비공개 프로젝트에만 노출 */}
+            {project.private && (project.role || project.outputs?.length) && (
+                <div className="mb-4 rounded-lg bg-gray-50 p-3 text-xs sm:text-sm text-gray-700 space-y-1">
+                    {project.role && (
+                        <p>
+                            <span className="font-semibold text-gray-900">Role:</span> {project.role}
+                        </p>
+                    )}
+                    {project.outputs?.length ? (
+                        <p>
+                            <span className="font-semibold text-gray-900">Output:</span> {project.outputs.join(' · ')}
+                        </p>
+                    ) : null}
+                </div>
+            )}
+
             <div className="flex flex-wrap gap-2 text-xs sm:text-sm mb-4">
                 {project.stack.map((tech, i) => (
                     <span key={i} className="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">
@@ -27,6 +46,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                     </span>
                 ))}
             </div>
+
             {project.private ? (
                 <span className="text-gray-500 text-sm">🔒 비공개 프로젝트</span>
             ) : (
